@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blogs</title>
+        <!-- TailwindCSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    
+    <body >
+        <!-- Navigation -->
+        <div class="flex justify-between items-center p-5"  style="background-color: #F4F7FF;">
+            <div class="flex items-center">
+                <img src="./assets/logo.png" alt="Logo" class="w-10 h-10">
+                <div class="text-xl ml-2">
+                    Dev<span style="color: #00303C;">Board</span>
+                </div>
+            </div>
+            <!-- Button -->
+            <a href="index.html">
+            <button class="back" style="background-color: #3752FD; margin: 5px; border-radius: 10px; padding: 10px; color: white;">
+                Back To Desk
+            </button>
+        </div>
+
+        <div class=" flex justify-center font-semibold">Blogs</div>
+<!--  -->
+        <div style="background-color: #F4F7FF;padding: 20px; margin: 20px;">
+            <h2 class="font-semibold">1. What are the different ways to select an element in the DOM?</h2>
+            <hr style="border: 1px dotted  #ccc; margin: 20px 0; width: 100%;">
+            <h2>Answer: You can select an element in the DOM using `getElementById('id')` to target by ID, `getElementsByClassName('class')` for elements with a class, or `getElementsByTagName('tag')` for elements with a specific tag. For more flexibility, `querySelector('selector')` selects the first element matching a CSS selector, and `querySelectorAll('selector')` selects all matching elements.</h2>
+        </div>
+        <!--  -->
+        <div style="background-color: #F4F7FF;padding: 20px; margin: 20px;">
+            <h2 class="font-semibold">2. What is the difference between innerHTML, innerText and textContent?</h2>
+            <hr style="border: 1px dotted  #ccc; margin: 20px 0; width: 100%;">
+            <h2>Answer: `innerHTML` lets you get or set the HTML inside an element, including tags. `innerText` retrieves or sets the visible text while respecting styles like `display: none`. `textContent` retrieves or sets all text, ignoring styles and including hidden text. Use them depending on whether you need raw HTML, visible text, or plain text.</h2>
+        </div>
+        <!--  -->
+        <div style="background-color: #F4F7FF;padding: 20px; margin: 20px;">
+            <h2 class="font-semibold">3. What is event delegation in the DOM?</h2>
+            <hr style="border: 1px dotted  #ccc; margin: 20px 0; width: 100%;">
+            <h2>Answer: Event delegation is a technique in the DOM where you attach a single event listener to a parent element to manage events for its child elements, even if they are dynamically added later. Instead of adding separate listeners to each child, the parent listens for events bubbling up from the child, improving performance and flexibility.</h2>
+        </div>
+        <!--  -->
+        <div style="background-color: #F4F7FF;padding: 20px; margin: 20px;">
+            <h2 class="font-semibold">4.What is event bubbling in the DOM?</h2>
+            <hr style="border: 1px dotted  #ccc; margin: 20px 0; width: 100%;">
+            <h2>Answer: Event bubbling in the DOM occurs when an event starts at the innermost target element and propagates outward to its parent elements, one level at a time. For example, if you click on a button inside a `div`, the click event first triggers on the button and then "bubbles up" to the `div` and any other ancestor elements. This helps manage events efficiently, especially with techniques like event delegation.</h2>
+        </div>
+        <!--  -->
+          <!--  -->
+          <div style="background-color: #F4F7FF;padding: 20px; margin: 20px;">
+            <h2 class="font-semibold">5. How do you create,add,and remove elements using JavaScripts?</h2>
+            <hr style="border: 1px dotted  #ccc; margin: 20px 0; width: 100%;">
+            <h2>Answer: To create an element, you use `document.createElement()`. For example, `const newElement = document.createElement('div')` creates a new `div` element.To add the created element to the DOM, use `appendChild()` or `append()`. For example, `parent.appendChild(newElement)` adds the new element as a child to the parent element.To remove an element, you can use either `removeChild()` or `remove()`. For instance, `parent.removeChild(newElement)` removes it from the parent, or `newElement.remove()` directly removes it from the DOM.</h2>
+        </div>
+        <script src="script.js"></script>
+        <a href="index.html">Back To Desk</a>
+        </body>
+    
+
+    </html>
+    
+</body>
+
+</html>
