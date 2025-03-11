@@ -98,8 +98,11 @@ function back(){
 
 
         //Bg-color
+        function theme(){
         const themeButton = document.getElementById('theme-btn');
 
         themeButton.addEventListener('click', () => {
             document.body.classList.toggle('dark-theme');
         });
+    }
+    theme();
